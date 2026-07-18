@@ -1,16 +1,24 @@
-# iot_app
+# 💡 Auto Light IoT - Smart Lighting Dashboard
 
-A new Flutter project.
+A real-time mobile dashboard built with Flutter to monitor and manage an automated smart lighting system. This application communicates with ESP8266/ESP32 microcontrollers via Firebase Realtime Database, allowing users to seamlessly switch between hardware-driven automation and manual software overrides.
 
-## Getting Started
+## ✨ Key Features
 
-This project is a starting point for a Flutter application.
+* **Real-Time Sensor Telemetry:** Continuously monitors LDR (Light Dependent Resistor) sensor values and environment status (Dark/Dim/Bright) with millisecond latency.
+* **Hardware Override Logic:** Safely disables manual switches when the hardware is in "Auto Sensor" mode to prevent logical conflicts between the microcontroller and the mobile app.
+* **Smart Push Notifications (Delta Detection):** Utilizes custom state-comparison algorithms to trigger local notifications only during actual state changes, completely eliminating notification spam.
+* **Dynamic Configuration:** Allows users to remotely calibrate sensor thresholds (house/street lights) and delay intervals directly from their mobile devices.
+* **Secure Authentication:** Implements a custom Firebase node authentication system for personalized access.
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠️ Tech Stack
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+**Mobile Application:**
+* **Framework:** Flutter (Dart)
+* **Local Notifications:** `awesome_notifications`
+* **State Management:** `setState` with Stream Subscriptions
+* **Typography:** Google Fonts (Poppins)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**Backend & Hardware:**
+* **Database:** Firebase Realtime Database (NoSQL)
+* **Microcontroller:** ESP8266
+* **Sensor:** LDR Sensor
