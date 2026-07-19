@@ -2,7 +2,7 @@
 
 A real-time mobile dashboard built with Flutter to monitor and manage an automated smart lighting system. This application communicates with ESP8266/ESP32 microcontrollers via Firebase Realtime Database, allowing users to seamlessly switch between hardware-driven automation and manual software overrides.
 
-## ✨ Key Features
+## - Key Features
 
 * **Real-Time Sensor Telemetry:** Continuously monitors LDR (Light Dependent Resistor) sensor values and environment status (Dark/Dim/Bright) with millisecond latency.
 * **Hardware Override Logic:** Safely disables manual switches when the hardware is in "Auto Sensor" mode to prevent logical conflicts between the microcontroller and the mobile app.
@@ -10,7 +10,7 @@ A real-time mobile dashboard built with Flutter to monitor and manage an automat
 * **Dynamic Configuration:** Allows users to remotely calibrate sensor thresholds (house/street lights) and delay intervals directly from their mobile devices.
 * **Secure Authentication:** Implements a custom Firebase node authentication system for personalized access.
 
-## 🛠️ Tech Stack
+## - Tech Stack
 
 **Mobile Application:**
 * **Framework:** Flutter (Dart)
